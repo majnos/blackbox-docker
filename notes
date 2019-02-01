@@ -1,0 +1,7 @@
+update:
+
+npm i -g npm-check-updates
+ncu -u
+npm install
+
+https://www.carbonatethis.com/rest-api-testing-with-cucumber-and-javascript/

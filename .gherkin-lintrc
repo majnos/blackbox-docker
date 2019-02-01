@@ -1,0 +1,14 @@
+{
+  "new-line-at-eof": ["on", "yes"],
+  "name-length" : ["on", { "Feature": 80, "Scenario": 80, "Step": 80 }],
+  "no-unnamed-features": "on",
+  "no-dupe-feature-names": "on",
+  "no-dupe-scenario-names": "on",
+  "no-multiple-empty-lines": "on",
+  "no-scenario-outlines-without-examples": "on",
+  "no-trailing-spaces": "on",
+  "no-unnamed-features": "on",
+  "no-unnamed-scenarios": "on",
+  "no-unused-variables": "on",
+  "use-and": "on"
+}

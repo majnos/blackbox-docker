@@ -1,0 +1,66 @@
+{
+  "name": "Integration-Testing",
+  "version": "1.0.0",
+  "description": "Integration-Testing",
+  "keywords": [
+    "qa",
+    "partners"
+  ],
+  "author": "qa",
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rimraf log/*",
+    "cuke": "./bin/cuke.sh",
+    "cuke-debug": "LOG_LEVEL=debug npm run cuke",
+    "ci": "./bin/cuke.sh --tags ${CUKE_TAG} && ./bin/artifacts.sh",
+    "artifact": "./bin/artifacts.sh",
+    "EPA": "npm run cuke -- --tags @EPA && npm run artifact",
+    "lint": "gherkin-lint && eslint ."
+  },
+  "precommit": [
+    "lint"
+  ],
+  "dependencies": {
+    "arc4": "^3.4.0",
+    "awilix": "^3.0.9",
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "base-x": "^3.0.5",
+    "base62": "^2.0.0",
+    "chai": "^4.1.2",
+    "country-list": "^1.1.0",
+    "cucumber": "^5.0.1",
+    "cucumber-html-reporter": "^4.0.4",
+    "cucumber-pretty": "^1.4.4",
+    "handlebars": "^4.0.12",
+    "js-yaml": "^3.12.0",
+    "lodash.get": "^4.4.2",
+    "log4js": "^3.0.5",
+    "moment": "^2.22.2",
+    "rimraf": "^2.6.2",
+    "tough-cookie": "^2.4.3",
+    "uuid": "^3.3.2",
+    "yaml-include": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai-subset": "^1.6.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsdoc": "^0.3.2",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsdoc": "^3.8.0",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-require-path-exists": "^1.1.9",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-typelint": "^1.0.9",
+    "gherkin-lint": "^3.0.0",
+    "got": "^9.6.0",
+    "pre-commit": "^1.2.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "yaml-lint": "^1.2.4"
+  }
+}

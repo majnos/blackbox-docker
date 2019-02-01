@@ -1,0 +1,52 @@
+{
+  "extends": [
+    "standard",
+    "standard-jsdoc",
+    "plugin:require-path-exists/recommended"
+  ],
+  "plugins": [
+    "standard",
+    "promise",
+    "json",
+    "typelint",
+    "jsdoc",
+    "chai-friendly",
+    "require-path-exists"
+  ],
+  "env": {
+    "mocha": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "rules": {
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2,
+    "arrow-parens": "error",
+    "indent": "error",
+    "camelcase": "warn",
+    "no-undef": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"]}],
+    "valid-jsdoc": ["warn", {"requireParamDescription": false, "requireReturnDescription": false}],
+    "no-throw-literal" : "warn",
+    "object-curly-spacing": ["error", "always"],
+    "require-jsdoc": "error",
+    "jsdoc/require-param-type": "error",
+    "jsdoc/require-returns-type": "error",
+    "jsdoc/require-param": "error",
+    "jsdoc/check-types": "error",
+    "jsdoc/require-hyphen-before-param-description": "off",
+    "jsdoc/require-description-complete-sentence": "off",
+    "jsdoc/require-param-description": "off",
+    "jsdoc/require-returns-description": "off",
+    "typelint/typelint": "warn",
+    "eol-last": "error",
+    "strict": ["error", "global"]
+  }
+}
