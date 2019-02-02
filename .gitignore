@@ -1,4 +1,5 @@
-node_modules
-*.log
-log/*
-.idea
+Docker-tests/node_modules
+Docker-tests/*.log
+Docker-tests/log/*
+Docker-tests/.idea
+Docker-node/.config

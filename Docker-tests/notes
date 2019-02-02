@@ -5,3 +5,4 @@ ncu -u
 npm install
 
 https://www.carbonatethis.com/rest-api-testing-with-cucumber-and-javascript/
+https://medium.com/@anephenix/end-to-end-testing-single-page-apps-and-node-js-apis-with-cucumber-js-and-puppeteer-ad5a519ace0s
